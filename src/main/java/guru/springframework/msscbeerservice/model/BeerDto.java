@@ -19,7 +19,7 @@ import java.util.UUID;
 @Builder
 public class BeerDto {
     private UUID id;
-    private Long upc;
+    private String upc;
     private String beerNane;
     private BeerStyleType beerStyle;
     private BigDecimal price;
