@@ -33,9 +33,17 @@ public class BeerController {
         return new ResponseEntity(HttpStatus.CREATED);
     }
 
-    @PutMapping(value = "/{beerId}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity updateBeerById(@PathVariable UUID beerId, @RequestBody BeerDto beer) {
+    @PutMapping(value = "/id/{beerId}", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void updateBeerById(@PathVariable UUID beerId, @RequestBody BeerDto beer) {
         //todo impl
-        return new ResponseEntity(HttpStatus.NO_CONTENT);
+        // call service to update
+    }
+
+    @DeleteMapping(value = "/id/{beerId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteBeerById(@PathVariable UUID beerId) {
+        //todo impl
+        // call service method to delete
     }
 }
