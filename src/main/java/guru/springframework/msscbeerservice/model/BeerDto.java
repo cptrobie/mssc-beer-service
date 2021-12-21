@@ -20,7 +20,7 @@ import java.util.UUID;
 public class BeerDto {
     private UUID id;
     private String upc;
-    private String beerNane;
+    private String beerName;
     private BeerStyleType beerStyle;
     private BigDecimal price;
     private Integer quantityOnHand;

@@ -32,7 +32,7 @@ public class Beer {
     @Column(unique = true)
     private Long upc;
 
-    private String beerNane;
+    private String beerName;
     private BeerStyleType beerStyle;
     private BigDecimal price;
 
