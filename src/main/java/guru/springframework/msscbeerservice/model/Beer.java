@@ -1,4 +1,4 @@
-package guru.springframework.msscbeerservice.repository;
+package guru.springframework.msscbeerservice.model;
 
 import guru.springframework.msscbeerservice.model.BeerStyleType;
 import lombok.*;
